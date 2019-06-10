@@ -10,7 +10,7 @@ class App extends Component{
   }
 
   componentDidMount(){
-    axios.get('http://localhost:5000/')
+    axios.get('/app')
       .then(res => {
         console.log(res.data[0].data);
         this.setState({ data: res.data[0].data });
